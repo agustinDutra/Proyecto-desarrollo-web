@@ -1,0 +1,22 @@
+@import "variables";
+
+.servicios {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    .cumpleaños {
+        @include servicios(url(../multimedia/cumpleaños.jpg), to left);
+        
+    }
+    .casamientos {
+        @include servicios(url(../multimedia/casamiento.jpg), to right);
+        
+    }
+    .reunionesYeventos {
+        @include servicios(url(../multimedia/eventos-reuniones.jpg), to left);
+    }
+    .graduaciones {
+        @include servicios(url(../multimedia/graduacion.png), to right);
+    }
+}

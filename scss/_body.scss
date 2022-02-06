@@ -1,0 +1,27 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    h1 {
+        font-family: "Merienda", cursive;
+        color: $color_oscuro;
+        font-size: 1.7rem;
+        text-align: justify;
+        line-height: 1.6;
+    }
+    h2 {
+        font-family: "Merienda", cursive;
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+    p {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+}

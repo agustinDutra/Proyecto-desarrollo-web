@@ -1,0 +1,51 @@
+@import "variables";
+
+.formulario {
+    background-color: #a57625;
+    form {
+        width: 50%;
+        margin: auto;
+        padding: 200px 0;
+        color: $color_claro;
+        font-family: "Quicksand", sans-serif;
+        text-align: center;
+        fieldset {
+            box-shadow: 20px 20px 20px #1f1503;
+            padding: 50px;
+            background-color: #4e3509;
+            font-size: 1.2rem;
+            border-radius: 10pt;
+
+            label {
+                padding-bottom: 20px;
+            }
+            .ancho_llenar {
+                width: 80%;
+                background-color: $color_claro;
+                padding: 10px;
+                border-radius: 10pt;
+                border: 1px solid $color_claro;
+                font-weight: bold;
+            }
+            textarea {
+                width: 80%;
+                height: 300px;
+                background-color: $color_claro;
+                border-radius: 10pt;
+                padding: 10px;
+                font-weight: bold;
+            }
+            .enviar {
+                padding: 10px 60px;
+                background-color: #a57625;
+                color: $color_claro;
+                border-radius: 10pt;
+                border: 1px solid $color_claro;
+                &:hover {
+                    background-color: $color_oscuro;
+                    color: $color_claro;
+                }
+            }
+        }
+    }
+}

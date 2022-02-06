@@ -1,0 +1,545 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body h1 {
+  font-family: "Merienda", cursive;
+  color: #755319;
+  font-size: 1.7rem;
+  text-align: justify;
+  line-height: 1.6; }
+
+body h2 {
+  font-family: "Merienda", cursive;
+  font-size: 1.5rem;
+  padding-bottom: 20px; }
+
+body p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5; }
+
+header {
+  width: 100%;
+  height: 350px;
+  background-color: #f4edca;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+nav {
+  border-bottom: 0.5px solid #755319; }
+  nav ul .nav-item {
+    padding: 5px 10px; }
+    nav ul .nav-item .nav-link {
+      font-size: 1.2rem;
+      font-family: "Inter", sans-serif; }
+
+footer {
+  width: 100%;
+  background-color: #755319;
+  display: flex;
+  justify-content: center; }
+  footer .logoFooter img {
+    width: 200px;
+    padding: 50px 0; }
+
+.seccionUno {
+  width: 100%;
+  margin: auto; }
+  .seccionUno h1 {
+    padding: 10%; }
+
+.seccionDos .seccionDos_tortas,
+.seccionDos .seccionDos_cupcakes {
+  width: 100%;
+  height: 700px;
+  background-color: #755319;
+  color: #f4edca;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5vw;
+  align-items: center; }
+  .seccionDos .seccionDos_tortas .cont,
+  .seccionDos .seccionDos_cupcakes .cont {
+    width: 25vw; }
+    .seccionDos .seccionDos_tortas .cont img,
+    .seccionDos .seccionDos_cupcakes .cont img {
+      width: 25vw;
+      filter: sepia();
+      transition: all 1s ease; }
+      .seccionDos .seccionDos_tortas .cont img:hover,
+      .seccionDos .seccionDos_cupcakes .cont img:hover {
+        width: 26vw;
+        filter: none; }
+  .seccionDos .seccionDos_tortas .contDos,
+  .seccionDos .seccionDos_cupcakes .contDos {
+    width: 25vw; }
+
+.seccionDos .seccionDos_alfajores,
+.seccionDos .seccionDos_masitas {
+  width: 100%;
+  height: 700px;
+  background-color: #f4edca;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5vw;
+  align-items: center; }
+  .seccionDos .seccionDos_alfajores .cont,
+  .seccionDos .seccionDos_masitas .cont {
+    width: 25vw; }
+    .seccionDos .seccionDos_alfajores .cont img,
+    .seccionDos .seccionDos_masitas .cont img {
+      width: 25vw;
+      filter: sepia();
+      transition: all 1s ease; }
+      .seccionDos .seccionDos_alfajores .cont img:hover,
+      .seccionDos .seccionDos_masitas .cont img:hover {
+        width: 26vw;
+        filter: none; }
+  .seccionDos .seccionDos_alfajores .contDos,
+  .seccionDos .seccionDos_masitas .contDos {
+    width: 25vw; }
+
+.seccionTres {
+  width: 100%;
+  margin: auto;
+  background-color: #755319;
+  color: #f4edca; }
+  .seccionTres h1 {
+    padding: 10%;
+    color: #f4edca; }
+
+.seccionCuatro {
+  width: 80%;
+  height: 600px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "tituloCuatro tituloCuatro tituloCuatro" "primerP segundoP tercerP";
+  column-gap: 50px;
+  align-items: flex-start;
+  justify-items: center; }
+  .seccionCuatro .tituloCuatro {
+    grid-area: tituloCuatro;
+    align-self: center; }
+    .seccionCuatro .tituloCuatro h2 {
+      padding: 0; }
+  .seccionCuatro .primerP {
+    grid-area: primerP; }
+  .seccionCuatro .segundoP {
+    grid-area: segundoP; }
+  .seccionCuatro .tercerP {
+    grid-area: tercerP; }
+
+.seccionCinco {
+  width: 100%;
+  background-color: #f4edca; }
+  .seccionCinco .seccionCinco_contenedor {
+    width: 40%;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "tituloCinco tituloCinco tituloCinco tituloCinco" "fb ig wp tt";
+    align-items: center;
+    justify-items: center; }
+    .seccionCinco .seccionCinco_contenedor .tituloCinco {
+      grid-area: tituloCinco;
+      align-self: flex-end; }
+      .seccionCinco .seccionCinco_contenedor .tituloCinco h2 {
+        padding: 0; }
+    .seccionCinco .seccionCinco_contenedor .fb {
+      grid-area: fb;
+      transition: all 0.5s ease; }
+    .seccionCinco .seccionCinco_contenedor .ig {
+      grid-area: ig;
+      transition: all 0.5s ease; }
+    .seccionCinco .seccionCinco_contenedor .wp {
+      grid-area: wp;
+      transition: all 0.5s ease; }
+    .seccionCinco .seccionCinco_contenedor .tt {
+      grid-area: tt;
+      transition: all 0.5s ease; }
+    .seccionCinco .seccionCinco_contenedor .fb:hover,
+    .seccionCinco .seccionCinco_contenedor .ig:hover,
+    .seccionCinco .seccionCinco_contenedor .wp:hover,
+    .seccionCinco .seccionCinco_contenedor .tt:hover {
+      opacity: 0.7; }
+
+.productos {
+  width: 100%; }
+  .productos h2 {
+    padding: 100px 0; }
+  .productos .leyenda {
+    background-color: #755319;
+    color: white; }
+  .productos .leyenda p {
+    padding-top: 10px;
+    font-size: 1rem; }
+
+.aire {
+  width: 100%;
+  height: 300px; }
+
+.servicios {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+  .servicios .cumpleaños {
+    background-image: url(../multimedia/cumpleaños.jpg), linear-gradient(to left, #755319, black);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    transition: .5s all ease; }
+    .servicios .cumpleaños:hover {
+      filter: sepia(); }
+    .servicios .cumpleaños .texto {
+      width: 80%;
+      height: 700px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      color: white; }
+      .servicios .cumpleaños .texto p {
+        line-height: 2; }
+  .servicios .casamientos {
+    background-image: url(../multimedia/casamiento.jpg), linear-gradient(to right, #755319, black);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    transition: .5s all ease; }
+    .servicios .casamientos:hover {
+      filter: sepia(); }
+    .servicios .casamientos .texto {
+      width: 80%;
+      height: 700px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      color: white; }
+      .servicios .casamientos .texto p {
+        line-height: 2; }
+  .servicios .reunionesYeventos {
+    background-image: url(../multimedia/eventos-reuniones.jpg), linear-gradient(to left, #755319, black);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    transition: .5s all ease; }
+    .servicios .reunionesYeventos:hover {
+      filter: sepia(); }
+    .servicios .reunionesYeventos .texto {
+      width: 80%;
+      height: 700px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      color: white; }
+      .servicios .reunionesYeventos .texto p {
+        line-height: 2; }
+  .servicios .graduaciones {
+    background-image: url(../multimedia/graduacion.png), linear-gradient(to right, #755319, black);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    transition: .5s all ease; }
+    .servicios .graduaciones:hover {
+      filter: sepia(); }
+    .servicios .graduaciones .texto {
+      width: 80%;
+      height: 700px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      color: white; }
+      .servicios .graduaciones .texto p {
+        line-height: 2; }
+
+.formulario {
+  background-color: #a57625; }
+  .formulario form {
+    width: 50%;
+    margin: auto;
+    padding: 200px 0;
+    color: #f4edca;
+    font-family: "Quicksand", sans-serif;
+    text-align: center; }
+    .formulario form fieldset {
+      box-shadow: 20px 20px 20px #1f1503;
+      padding: 50px;
+      background-color: #4e3509;
+      font-size: 1.2rem;
+      border-radius: 10pt; }
+      .formulario form fieldset label {
+        padding-bottom: 20px; }
+      .formulario form fieldset .ancho_llenar {
+        width: 80%;
+        background-color: #f4edca;
+        padding: 10px;
+        border-radius: 10pt;
+        border: 1px solid #f4edca;
+        font-weight: bold; }
+      .formulario form fieldset textarea {
+        width: 80%;
+        height: 300px;
+        background-color: #f4edca;
+        border-radius: 10pt;
+        padding: 10px;
+        font-weight: bold; }
+      .formulario form fieldset .enviar {
+        padding: 10px 60px;
+        background-color: #a57625;
+        color: #f4edca;
+        border-radius: 10pt;
+        border: 1px solid #f4edca; }
+        .formulario form fieldset .enviar:hover {
+          background-color: #755319;
+          color: #f4edca; }
+
+@media screen and (max-width: 1199px) {
+  body h1 {
+    font-size: 1.4rem; }
+  body h2 {
+    font-size: 1.2rem; }
+  body p {
+    font-size: 1rem; }
+  .seccionDos .seccionDos_tortas .cont img,
+  .seccionDos .seccionDos_alfajores .cont img,
+  .seccionDos .seccionDos_cupcakes .cont img,
+  .seccionDos .seccionDos_masitas .cont img {
+    filter: none;
+    transition: none; }
+  .seccionCinco .seccionCinco_contenedor {
+    width: 60%;
+    margin: auto; }
+  .formulario form {
+    width: 60%;
+    padding: 100px 0; }
+    .formulario form fieldset {
+      padding: 30px;
+      font-size: 1rem; }
+      .formulario form fieldset textarea {
+        height: 200px; } }
+
+@media screen and (max-width: 991px) {
+  body h1 {
+    font-size: 1.2rem; }
+  body h2 {
+    font-size: 1.1rem; }
+  body p {
+    font-size: 1rem; }
+  header {
+    height: 200px; }
+    header img {
+      width: 300px; }
+  nav ul .nav-item .nav-link {
+    border-bottom: 1px solid white; }
+  .seccionUno h1 {
+    padding: 8%; }
+  .seccionDos .seccionDos_tortas,
+  .seccionDos .seccionDos_alfajores,
+  .seccionDos .seccionDos_cupcakes,
+  .seccionDos .seccionDos_masitas {
+    height: 500px;
+    display: flex;
+    justify-content: center; }
+    .seccionDos .seccionDos_tortas .cont,
+    .seccionDos .seccionDos_alfajores .cont,
+    .seccionDos .seccionDos_cupcakes .cont,
+    .seccionDos .seccionDos_masitas .cont {
+      display: flex;
+      justify-content: center;
+      width: 35vw; }
+    .seccionDos .seccionDos_tortas .contDos,
+    .seccionDos .seccionDos_alfajores .contDos,
+    .seccionDos .seccionDos_cupcakes .contDos,
+    .seccionDos .seccionDos_masitas .contDos {
+      width: 35vw; }
+  .seccionTres h1 {
+    padding: 8%; }
+  .seccionCuatro {
+    height: 500px;
+    grid-template-rows: 1fr 2fr; }
+  .seccionCinco .seccionCinco_contenedor {
+    width: 70%;
+    height: 300px; }
+  .productos h2 {
+    padding: 50px 0; }
+  .productos p {
+    font-size: 0.8rem; }
+  .aire {
+    height: 100px; }
+  .servicios .cumpleaños .texto,
+  .servicios .casamientos .texto,
+  .servicios .reunionesYeventos .texto,
+  .servicios .graduaciones .texto {
+    height: 500px; }
+  footer .logoFooter img {
+    width: 100px;
+    padding: 30px 0; } }
+
+@media screen and (max-width: 767px) {
+  body h1 {
+    font-size: 1.1rem; }
+  body h2 {
+    font-size: 1.1rem; }
+  body p {
+    font-size: 0.9rem; }
+  nav ul .nav-item {
+    padding: 5px 10px; }
+    nav ul .nav-item .nav-link {
+      font-size: 1rem;
+      border-bottom: 1px solid white; }
+  .seccionDos .seccionDos_tortas,
+  .seccionDos .seccionDos_alfajores,
+  .seccionDos .seccionDos_cupcakes,
+  .seccionDos .seccionDos_masitas {
+    height: 350px;
+    gap: 3vw; }
+    .seccionDos .seccionDos_tortas .cont,
+    .seccionDos .seccionDos_alfajores .cont,
+    .seccionDos .seccionDos_cupcakes .cont,
+    .seccionDos .seccionDos_masitas .cont {
+      width: 35vw; }
+    .seccionDos .seccionDos_tortas .contDos,
+    .seccionDos .seccionDos_alfajores .contDos,
+    .seccionDos .seccionDos_cupcakes .contDos,
+    .seccionDos .seccionDos_masitas .contDos {
+      width: 50vw; }
+  .seccionCuatro {
+    width: 90%;
+    height: 350px;
+    column-gap: 30px; }
+  .seccionCinco .seccionCinco_contenedor {
+    width: 70%;
+    height: 200px;
+    grid-template-rows: 1fr 1fr; }
+    .seccionCinco .seccionCinco_contenedor .tituloCinco {
+      align-self: center; }
+    .seccionCinco .seccionCinco_contenedor img {
+      width: 40px; }
+  .formulario form {
+    width: 70%;
+    padding: 80px 0; }
+    .formulario form fieldset {
+      padding: 30px;
+      font-size: 1rem; }
+      .formulario form fieldset textarea {
+        height: 200px; } }
+
+@media screen and (max-width: 575px) {
+  body h1 {
+    font-size: 1rem; }
+  body h2 {
+    font-size: 1rem; }
+  body p {
+    font-size: 0.9rem; }
+  header {
+    height: 100px; }
+    header img {
+      width: 150px; }
+  .seccionDos .seccionDos_tortas,
+  .seccionDos .seccionDos_alfajores,
+  .seccionDos .seccionDos_cupcakes,
+  .seccionDos .seccionDos_masitas {
+    height: 300px;
+    gap: 0; }
+    .seccionDos .seccionDos_tortas .cont,
+    .seccionDos .seccionDos_alfajores .cont,
+    .seccionDos .seccionDos_cupcakes .cont,
+    .seccionDos .seccionDos_masitas .cont {
+      display: none; }
+    .seccionDos .seccionDos_tortas .contDos,
+    .seccionDos .seccionDos_alfajores .contDos,
+    .seccionDos .seccionDos_cupcakes .contDos,
+    .seccionDos .seccionDos_masitas .contDos {
+      width: 90vw; }
+  .seccionCuatro {
+    height: 550px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "tituloCuatro" "primerP" "segundoP" "tercerP";
+    row-gap: 10px;
+    align-items: center; }
+    .seccionCuatro .tituloCuatro {
+      grid-area: tituloCuatro; }
+      .seccionCuatro .tituloCuatro h2 {
+        padding: 20px 0; }
+  .productos h2 {
+    padding: 20px 0; }
+  .aire {
+    height: 50px; }
+  .servicios {
+    display: block; }
+    .servicios .cumpleaños .texto,
+    .servicios .casamientos .texto,
+    .servicios .reunionesYeventos .texto,
+    .servicios .graduaciones .texto {
+      height: 300px; }
+  .formulario form {
+    width: 90%;
+    padding: 80px 0; }
+    .formulario form fieldset {
+      box-shadow: none;
+      padding: 20px;
+      font-size: 0.8rem;
+      border-radius: 5pt; }
+      .formulario form fieldset label {
+        padding-bottom: 5px; }
+      .formulario form fieldset .ancho_llenar {
+        width: 90%;
+        padding: 5px;
+        border-radius: 5pt; }
+      .formulario form fieldset textarea {
+        width: 90%;
+        height: 150px;
+        background-color: #f4edca;
+        border-radius: 10pt;
+        padding: 10px;
+        font-weight: bold; }
+      .formulario form fieldset .enviar {
+        width: 50%;
+        padding: 10px 0;
+        border-radius: 5pt; }
+        .formulario form fieldset .enviar:hover {
+          background-color: #755319;
+          color: #f4edca; } }
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none; }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block; } }
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex; }
+
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%); }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%); } }
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0); }

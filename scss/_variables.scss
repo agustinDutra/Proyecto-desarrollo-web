@@ -1,0 +1,55 @@
+$color_claro: #f4edca;
+$color_oscuro: #755319;
+$color_oscuro_opacidad: rgba(117, 83, 25, 0.8);
+$letras: black;
+
+@mixin seccionDos_index($bg_color, $color) {
+    width: 100%;
+    height: 700px;
+    background-color: $bg_color;
+    color: $color;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5vw;
+    align-items: center;
+    .cont {
+        width: 25vw;
+        img {
+            width: 25vw;
+            filter: sepia();
+            transition: all 1s ease;
+            &:hover {
+                width: 26vw;
+                filter: none;
+            }
+        }
+    }
+    .contDos {
+        width: 25vw;
+    }
+}
+
+@mixin servicios($img_fondo, $direccion) {
+    background-image: ($img_fondo), linear-gradient($direccion, $color_oscuro, black);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    transition: .5s all ease;
+    &:hover {
+        filter: sepia();
+    }
+    .texto {
+        width: 80%;
+        height: 700px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        color: white;
+        p{
+            line-height: 2;
+        }
+    }
+}

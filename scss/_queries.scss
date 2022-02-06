@@ -1,0 +1,321 @@
+@import "variables";
+
+@media screen and (max-width: 1199px) {
+    body {
+        h1 {
+            font-size: 1.4rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    .seccionDos {
+        .seccionDos_tortas,
+        .seccionDos_alfajores,
+        .seccionDos_cupcakes,
+        .seccionDos_masitas {
+            .cont {
+                img {
+                    filter: none;
+                    transition: none;
+                }
+            }
+        }
+    }
+    .seccionCinco {
+        .seccionCinco_contenedor {
+            width: 60%;
+            margin: auto;
+        }
+    }
+    .formulario {
+        form {
+            width: 60%;
+            padding: 100px 0;
+            fieldset {
+                padding: 30px;
+                font-size: 1rem;
+                textarea {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        h1 {
+            font-size: 1.2rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    header {
+        height: 200px;
+        img {
+            width: 300px;
+        }
+    }
+    nav {
+        ul {
+            .nav-item {
+                .nav-link {
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
+    .seccionUno {
+        h1 {
+            padding: 8%;
+        }
+    }
+    .seccionDos {
+        .seccionDos_tortas,
+        .seccionDos_alfajores,
+        .seccionDos_cupcakes,
+        .seccionDos_masitas {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            .cont {
+                display: flex;
+                justify-content: center;
+                width: 35vw;
+            }
+            .contDos {
+                width: 35vw;
+            }
+        }
+    }
+    .seccionTres {
+        h1 {
+            padding: 8%;
+        }
+    }
+    .seccionCuatro {
+        height: 500px;
+        grid-template-rows: 1fr 2fr;
+    }
+    .seccionCinco {
+        .seccionCinco_contenedor {
+            width: 70%;
+            height: 300px;
+        }
+    }
+    .productos {
+        h2 {
+            padding: 50px 0;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    .aire {
+        height: 100px;
+    }
+    .servicios {
+        .cumpleaños,
+        .casamientos,
+        .reunionesYeventos,
+        .graduaciones {
+            .texto {
+                height: 500px;
+            }
+        }
+    }
+    footer {
+        .logoFooter img {
+            width: 100px;
+            padding: 30px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        h1 {
+            font-size: 1.1rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+    }
+    nav {
+        ul {
+            .nav-item {
+                padding: 5px 10px;
+                .nav-link {
+                    font-size: 1rem;
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
+    .seccionDos {
+        .seccionDos_tortas,
+        .seccionDos_alfajores,
+        .seccionDos_cupcakes,
+        .seccionDos_masitas {
+            height: 350px;
+            gap: 3vw;
+            .cont {
+                width: 35vw;
+            }
+            .contDos {
+                width: 50vw;
+            }
+        }
+    }
+    .seccionCuatro {
+        width: 90%;
+        height: 350px;
+        column-gap: 30px;
+    }
+    .seccionCinco {
+        .seccionCinco_contenedor {
+            width: 70%;
+            height: 200px;
+            grid-template-rows: 1fr 1fr;
+            .tituloCinco {
+                align-self: center;
+            }
+            img {
+                width: 40px;
+            }
+        }
+    }
+    .formulario {
+        form {
+            width: 70%;
+            padding: 80px 0;
+            fieldset {
+                padding: 30px;
+                font-size: 1rem;
+                textarea {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        h1 {
+            font-size: 1rem;
+        }
+        h2 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+    }
+    header {
+        height: 100px;
+        img {
+            width: 150px;
+        }
+    }
+    .seccionDos {
+        .seccionDos_tortas,
+        .seccionDos_alfajores,
+        .seccionDos_cupcakes,
+        .seccionDos_masitas {
+            height: 300px;
+            gap: 0;
+            .cont {
+                display: none;
+            }
+            .contDos {
+                width: 90vw;
+            }
+        }
+    }
+    .seccionCuatro {
+        height: 550px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "tituloCuatro"
+            "primerP"
+            "segundoP"
+            "tercerP";
+        row-gap: 10px;
+        align-items: center;
+        .tituloCuatro {
+            grid-area: tituloCuatro;
+            h2 {
+                padding: 20px 0;
+            }
+        }
+    }
+    .productos {
+        h2 {
+            padding: 20px 0;
+        }
+    }
+    .aire {
+        height: 50px;
+    }
+    .servicios {
+        display: block;
+        .cumpleaños,
+        .casamientos,
+        .reunionesYeventos,
+        .graduaciones {
+            .texto {
+                height: 300px;
+            }
+        }
+    }
+    .formulario {
+        form {
+            width: 90%;
+            padding: 80px 0;
+            fieldset {
+                box-shadow: none;
+                padding: 20px;
+                font-size: 0.8rem;
+                border-radius: 5pt;
+                label {
+                    padding-bottom: 5px;
+                }
+                .ancho_llenar {
+                    width: 90%;
+                    padding: 5px;
+                    border-radius: 5pt;
+                }
+                textarea {
+                    width: 90%;
+                    height: 150px;
+                    background-color: $color_claro;
+                    border-radius: 10pt;
+                    padding: 10px;
+                    font-weight: bold;
+                }
+                .enviar {
+                    width: 50%;
+                    padding: 10px 0;
+                    border-radius: 5pt;
+                    &:hover {
+                        background-color: $color_oscuro;
+                        color: $color_claro;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+@import "variables";
+
+.seccionUno {
+    width: 100%;
+    margin: auto;
+    h1 {
+        padding: 10%;
+    }
+}
+
+.seccionDos {
+    .seccionDos_tortas,
+    .seccionDos_cupcakes {
+        @include seccionDos_index($color_oscuro, $color_claro);
+    }
+    .seccionDos_alfajores,
+    .seccionDos_masitas {
+        @include seccionDos_index($color_claro, $letras);
+    }
+}
+
+.seccionTres {
+    width: 100%;
+    margin: auto;
+    background-color: $color_oscuro;
+    color: $color_claro;
+    h1 {
+        padding: 10%;
+        color: $color_claro;
+    }
+}
+
+.seccionCuatro {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "tituloCuatro tituloCuatro tituloCuatro"
+        "primerP segundoP tercerP";
+    column-gap: 50px;
+    align-items: flex-start;
+    justify-items: center;
+    .tituloCuatro {
+        grid-area: tituloCuatro;
+        align-self: center;
+        h2 {
+            padding: 0;
+        }
+    }
+    .primerP {
+        grid-area: primerP;
+    }
+    .segundoP {
+        grid-area: segundoP;
+    }
+    .tercerP {
+        grid-area: tercerP;
+    }
+}
+
+.seccionCinco {
+    width: 100%;
+    background-color: $color_claro;
+    .seccionCinco_contenedor {
+        width: 40%;
+        height: 500px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+            "tituloCinco tituloCinco tituloCinco tituloCinco"
+            "fb ig wp tt";
+        align-items: center;
+        justify-items: center;
+        .tituloCinco {
+            grid-area: tituloCinco;
+            align-self: flex-end;
+            h2{
+                padding: 0;
+            }
+        }
+        .fb {
+            grid-area: fb;
+            transition: all 0.5s ease;
+        }
+        .ig {
+            grid-area: ig;
+            transition: all 0.5s ease;
+        }
+        .wp {
+            grid-area: wp;
+            transition: all 0.5s ease;
+        }
+        .tt {
+            grid-area: tt;
+            transition: all 0.5s ease;
+        }
+        .fb:hover,
+        .ig:hover,
+        .wp:hover,
+        .tt:hover {
+            opacity: 0.7;
+        }
+    }
+}
